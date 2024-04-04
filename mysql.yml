@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db-mysql:
+    image: mysql:5.5
+    restart: always
+    environment:
+      - MYSQL_DATABASE=trancotam
+      - MYSQL_ROOT_PASSWORD=1
+    ports:
+      - "3307:3306"
